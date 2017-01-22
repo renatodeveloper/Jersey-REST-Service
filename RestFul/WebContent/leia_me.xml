@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+
+1: br.com.restful.model.Cliente
+2: br.com.restful.factory.ConnectionFactory
+3: br.com.restful.dao.ClienteDao
+4: br.com.restful.controler.ClienteControler
+5: br.com.restful.resource.ClienteResource
+6: web.xml
+
+
+ -->
