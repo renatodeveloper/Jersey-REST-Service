@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 
-1: br.com.restful.model.Cliente
-2: br.com.restful.factory.ConnectionFactory
-3: br.com.restful.dao.ClienteDao
-4: br.com.restful.controler.ClienteControler
-5: br.com.restful.resource.ClienteResource
+1: br.com.restful.model.Cliente | Usuario
+2: br.com.restful.factory.ConnectionFactory | ""
+3: br.com.restful.dao.ClienteDao | UsuarioDao
+4: br.com.restful.controler.ClienteControler | UsuarioControler
+5: br.com.restful.resource.ClienteResource | UsuarioResource
 6: web.xml
 
 
