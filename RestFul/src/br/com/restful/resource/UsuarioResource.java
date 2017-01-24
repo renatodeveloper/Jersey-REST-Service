@@ -23,12 +23,12 @@ public class UsuarioResource {
 	 */
 	
 	@GET
-	@Path("/validarUsuario")
+	@Path("/login")
 	@Produces("application/json")
 //	@Produces("aplication/xml")
 	
-	//http://localhost:8080/RestFul/usuario/validarUsuario?param1=developer&param2=developer
-	//http://localhost:8080/RestFul/usuario/validarUsuario?paramJsonUser={"usuario":{"dsLogin": "developer","dsSenha": "developer"}}
+	//http://localhost:8080/RestFul/usuario/login?param1=developer&param2=developer
+	//http://localhost:8080/RestFul/usuario/login?paramJsonUser={"usuario":{"dsLogin": "developer","dsSenha": "developer"}}
 	
 	
 	public String validarUsuario(@Context UriInfo info){
