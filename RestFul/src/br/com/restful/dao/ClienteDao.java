@@ -6,8 +6,9 @@ import java.util.ArrayList;
 
 import br.com.restful.factory.ConnectionFactory;
 import br.com.restful.model.Cliente;
+
 /**
- * Classe responsavel por conter os metodos de consulta, alteração e exclusão (CRUD)
+ * Classe responsavel por conter os metodos de consulta, alteraï¿½ï¿½o e exclusï¿½o (CRUD)
  * @author renato
  *
  */
@@ -42,13 +43,13 @@ private static ClienteDao instance;
 			pstmt = conn.prepareStatement("SELECT * FROM CLIENTE");
 			rs = pstmt.executeQuery();
 			while(rs.next()){
-				Cliente cliente = new Cliente();
-				cliente.setId(rs.getInt("id"));
-				cliente.setNome(rs.getString("nome"));
-				cliente.setCpf(rs.getString("cpf"));
-				cliente.setEndereco(rs.getString("endereco"));
-				clientes.add(cliente);
-				System.out.print("\n Nome:" + cliente.getNome().toString() + "\n");
+				Cliente clienteF = new Cliente();
+				clienteF.setId(rs.getInt("id"));
+				clienteF.setNome(rs.getString("nome"));
+				clienteF.setCpf(rs.getString("cpf"));
+				clienteF.setEndereco(rs.getString("endereco"));
+				clientes.add(clienteF);
+				System.out.print("\n Nome:" + clienteF.getNome().toString() + "\n");
 			}
 			
 		}catch(Exception e){

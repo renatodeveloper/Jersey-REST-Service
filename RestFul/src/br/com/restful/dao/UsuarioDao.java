@@ -40,9 +40,15 @@ public class UsuarioDao extends ConnectionFactory {
 			status.put("result", "NOK");
 			
 			JSONObject jsonObject = new JSONObject(json);
+		    String dsLogin = jsonObject.getString("username"); 
+		    String dsSenha = jsonObject.getString("password"); 
+		    
+		    /*
+		    JSONObject jsonObject = new JSONObject(json);
 		    JSONObject jsonResult = jsonObject.getJSONObject("usuario");
 		    String dsLogin = jsonResult.getString("dsLogin"); 
 		    String dsSenha = jsonResult.getString("dsSenha"); 
+		    */
 			
 			pstmt = conn.prepareStatement("SELECT * FROM USUARIO WHERE dsLogin = '" + dsLogin + "' AND dsSenha = '" + dsSenha + "'");
 			rs = pstmt.executeQuery();

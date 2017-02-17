@@ -3,14 +3,14 @@ package br.com.restful.model;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- * Classe responsável por conter os atributos do Objeto Cliente 
+ * Classe responsï¿½vel por conter os atributos do Objeto Cliente 
  * @author renato
  *
  */
 
 
 /*
- * Anotação obrigatoria, do contrario não funciona o web service
+ * Anotaï¿½ï¿½o obrigatoria, do contrario nï¿½o funciona o web service
  */
 @XmlRootElement
 public final class Cliente {

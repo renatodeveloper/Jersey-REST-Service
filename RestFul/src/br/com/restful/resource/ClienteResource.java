@@ -14,7 +14,7 @@ import br.com.restful.model.Cliente;
 
 /*
  *  ** tomcat7  **
- * http://localhost:8080/RestFul/cliente/listarTodos
+ * http://localhost:8080/RestFul/cliente/todos
  * 
  * retorno:
  * 
@@ -31,7 +31,7 @@ public class ClienteResource {
 	 * @return ArrayList cliente
 	 */
 	@GET
-	@Path("/listarTodos")
+	@Path("/todos")
 	@Produces("application/json")
 //	@Produces("aplication/xml")
 	public ArrayList<Cliente> listarProdutos(){
